@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Challenge from "./pages/challenge/challenge";
 import GripTest from "./pages/griptest/testgrip";
 import Home from "./pages/Home/Home";
 import Test from "./pages/Test/Test";
@@ -9,6 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Test />} />
         <Route path="/test" element={<GripTest />} />
+        <Route path="/challenge" element={<Challenge />} />
         <Route path="/home" element={<Home />} />
         <Route
           path="*"
